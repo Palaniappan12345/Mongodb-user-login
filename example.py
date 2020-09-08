@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 #app.config['SECRET_KEY'] = 'aavvii'
 #mongo = PyMongo(app)
-cluster = MongoClient("mongodb+srv://Palaniappan:SjP@cluster0.k6yd0.mongodb.net/Palaniappan?retryWrites=true&w=majority")
+cluster = MongoClient("mongodb+srv://<db_name>:<pwd>@cluster0.k6yd0.mongodb.net/<db_name>?retryWrites=true&w=majority")
 db = cluster.Palaniappan
 collections = db.User_Credentials
 @app.route('/')
